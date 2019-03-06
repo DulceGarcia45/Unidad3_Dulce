@@ -21,7 +21,7 @@ namespace CrearClases.Modelo
             //proceso estudiar 
             return;
         }
-        public void ExplicaeTema (String materia)
+        public void ExplicaeTema (String m)
         {
             //proceso de hacer tarea
             return;
@@ -32,4 +32,5 @@ namespace CrearClases.Modelo
 
 
 }
-}
+
+

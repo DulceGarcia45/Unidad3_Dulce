@@ -1,6 +1,6 @@
-﻿namespace CrearClases
+﻿namespace Acatividad_4
 {
-    partial class FormaHelloWorld
+    partial class Form1
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,23 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // FormaHelloWorld
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 46F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(584, 361);
-            this.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(11, 11, 11, 11);
-            this.Name = "FormaHelloWorld";
-            this.Opacity = 0.5D;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Hello World";
-            this.ResumeLayout(false);
-
+            this.Text = "Form1";
         }
 
         #endregion

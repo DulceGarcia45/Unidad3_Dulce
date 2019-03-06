@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CrearClases
+namespace Acatividad_4
 {
-    public partial class FormaHelloWorld : Form
+    public partial class Form1 : Form
     {
-        public FormaHelloWorld()
+        public Form1()
         {
             InitializeComponent();
         }

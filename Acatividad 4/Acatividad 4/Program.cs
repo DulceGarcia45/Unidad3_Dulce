@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acatividad_4.Vista;
 
-namespace CrearClases
+namespace Acatividad_4
 {
     static class Program
     {
@@ -16,7 +17,7 @@ namespace CrearClases
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormaHelloWorld());
+            Application.Run(new FormaEstudiante());
         }
     }
 }
