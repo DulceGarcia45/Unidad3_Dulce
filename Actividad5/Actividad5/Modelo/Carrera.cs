@@ -13,7 +13,7 @@ namespace Actividad5.Modelo
         private string _descripcion;
 
 
-        public long NumeroControl
+        public long Duracion
         {
             get
             {
@@ -26,9 +26,33 @@ namespace Actividad5.Modelo
 
             }
         }
-        public string Descripcion { get; set; }
-        public string Nombre { get; set; }
-        public long Duracion { get; set; }
+        public string Descripcion {
+            get
+            {
+                return this._descripcion;
+            }
+                 set
+            {
+                if (value != null || (value.Length > 2 && value.Length <= 200))
+                {
+                    this._descripcion = value;
+                }
+            } }
+        public string Nombre {
+            get
+            {
+                return this._nombre;
+
+            }
+            set
+            {
+                if (value != null || (value.Length > 2 && value.Length <= 200))
+                {
+                    this._descripcion = value;
+                }
+
+            } }
+      
 
     }
 }

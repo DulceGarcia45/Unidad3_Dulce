@@ -4,29 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Actividad5.Modelo
+namespace ejemplo_2.Campeonato
 {
-    class Estudiante
+    class Equipo
     {
-
-        private long _numerocontrol;
+        private int _id;
         private string _nombre;
-        private byte _edad;
-        private char _genero;
-        public long NumeroControl
-        {
-            get
-            {
-                return this._numerocontrol;
+        private string _comunidad;
+        private string _entrenador;
+       
+        public int Id {
+            get{
+                return this._id;
             }
             set
             {
                 if (value > 0)
-                    this._numerocontrol = value;
-
+                    this._id = value;
             }
         }
-       
         public string Nombre {
             get
             {
@@ -39,34 +35,34 @@ namespace Actividad5.Modelo
                     this._nombre = value;
                 }
             }
-        }
-        public byte Edad
-        {
+                
+                }
+        public string Comunidad {
             get
             {
-                return this._edad;
+                return this._comunidad;
             }
             set
             {
-                if (value != 0)
-                    this._edad = value;
-
-            }
-        }
-        public char genero
-        {
-            get
-            {
-                return this._genero;
-            }
-            set
-            {
-                if (value == 'S' || value == 'N'|| value == 'H' || value == 'M')
+                if (value != null || (value.Length > 2 && value.Length <= 30))
                 {
-                    this._genero = value;
+                    this._comunidad = value;
+                }
+
+            }
+                }
+        public string Entrenador {
+            get
+            {
+                return this._entrenador;
+            }
+            set
+            {
+                if (value != null || (value.Length > 2 && value.Length <= 30))
+                {
+                    this._entrenador = value;
                 }
             }
                 }
-
     }
 }

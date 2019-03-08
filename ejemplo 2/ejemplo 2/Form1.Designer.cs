@@ -1,4 +1,4 @@
-﻿namespace Actividad5
+﻿namespace ejemplo_2
 {
     partial class Form1
     {
@@ -28,20 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Name = "Form1";
-            this.Opacity = 0.5D;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.ResumeLayout(false);
-
         }
 
         #endregion

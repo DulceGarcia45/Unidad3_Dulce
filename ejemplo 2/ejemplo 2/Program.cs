@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Actividad5.Vista;
 
-namespace Actividad5
+namespace ejemplo_2
 {
     static class Program
     {
@@ -17,7 +16,7 @@ namespace Actividad5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormaEstudiante());
+            Application.Run(new Form1());
         }
     }
 }

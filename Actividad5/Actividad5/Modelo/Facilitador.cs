@@ -12,7 +12,7 @@ namespace Actividad5.Modelo
         private string _nombre;
         private byte _edad;
        
-        public long NumeroControl
+        public byte Edad
         {
             get
             {
@@ -20,15 +20,48 @@ namespace Actividad5.Modelo
             }
             set
             {
-                if (value > 0)
+                if (value != 0)
                     this._edad = value;
 
             }
         }
-        public string profesion { get; set; }
-        public string Nombre { get; set; }
-        public byte Edad { get; set; }
-       
+        public string Profesion {
+            get
+            {
+                return this._profesion;
+            } set
+            {
+                if (value != null || (value.Length > 2 && value.Length <= 30))
+                {
+                    this._profesion = value;
+                }
+            } }
+
+        public string Nombre {
+            get
+            {
+                return this._nombre;
+            }
+                set
+            {
+                if (value != null || (value.Length > 2 && value.Length <= 30))
+                {
+                    this._nombre = value;
+                }
+
+            }
+                }
+
+        public void RevisarTarea(string materia)
+        {
+            
+            return;
+        }
+        public void ExplicaeTema(String tema)
+        {
+                       return;
+
+        }
     }
 }
-}
+
