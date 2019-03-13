@@ -46,12 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Campeonato\Campeonato.cs" />
-    <Compile Include="Campeonato\Cancha.cs" />
-    <Compile Include="Campeonato\Equipo.cs" />
-    <Compile Include="Campeonato\Jornada.cs" />
-    <Compile Include="Campeonato\Jugador.cs" />
-    <Compile Include="Campeonato\Partido.cs" />
+    <Compile Include="Campeonato\Metodo\Arbitro.cs" />
+    <Compile Include="Campeonato\Metodo\Campeonato.cs" />
+    <Compile Include="Campeonato\Metodo\Cancha.cs" />
+    <Compile Include="Campeonato\Metodo\Equipo.cs" />
+    <Compile Include="Campeonato\Metodo\Jornada.cs" />
+    <Compile Include="Campeonato\Metodo\Jugador.cs" />
+    <Compile Include="Campeonato\Metodo\Partido.cs" />
+    <Compile Include="Campeonato\Metodo\Persona.cs" />
+    <Compile Include="Campeonato\Vista\championShip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campeonato\Vista\championShip.Designer.cs">
+      <DependentUpon>championShip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campeonato\Vista\Jornada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campeonato\Vista\Jornada.Designer.cs">
+      <DependentUpon>Jornada.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +74,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Campeonato\Vista\championShip.resx">
+      <DependentUpon>championShip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campeonato\Vista\Jornada.resx">
+      <DependentUpon>Jornada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

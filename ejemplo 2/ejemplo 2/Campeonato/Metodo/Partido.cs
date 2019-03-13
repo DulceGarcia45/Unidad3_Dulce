@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ejemplo_2.Campeonato.Metodo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,7 +30,7 @@ namespace ejemplo_2.Campeonato
         private List<Arbitro> _arbitro2 = new List<Arbitro>();
 
         //constructores default
-        public addArbitro (Arbitro A)
+        public void addArbitro (Arbitro A)
         {
             this._arbitro1 = A;
             this._arbitro2 = A;
@@ -54,14 +55,72 @@ namespace ejemplo_2.Campeonato
             this._visistante = equipo2;
 
         }
-        
+
 
         ///private Arbitro [] arbitro;
-        public int Id { get; set; }
-        public DateTime Fecha { get; set; }
-        public bool IsFinalizados { get; set; }
+        public int Id
+        {
+            get
+            {
+                return this._id;
+            }
+            set
+            {
+                if (value > 0)
+                {
+                    this._id = value;
+
+                }
+            }
+
+        }
+        public DateTime Fecha {
+            get
+            {
+                return this._fecha;
+            }
+            set
+            {
+                {
+                    DateTime inicio = new DateTime(2019, 3, 8);
+                    if (value >= inicio)
+                    {
+                        this._fecha = value;
+                    }
+                }
+            }
+        }
+    
+    public bool IsFinalizados {
+
+        get
+        {
+            return this._isFinalizado;
+        }
+        set
+        {
+            this._isFinalizado  = value;
+        }
+    }
+
+        public static implicit operator Partido(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static implicit operator Partido(bool v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static implicit operator Partido(DateTime v)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
 
 
         
-    }
-}
+    
+

@@ -25,7 +25,7 @@ namespace ejemplo_2.Campeonato
 
                 }
             }
-value != null || (value.Length > 2 && value.Length <= 30)
+               
         }
         public string Nombre {
             get {
@@ -33,7 +33,7 @@ value != null || (value.Length > 2 && value.Length <= 30)
                     }
             set
             {
-                if ()
+                if (value != null || (value.Length > 2 && value.Length <= 30))
                 {
                     this._nombre = value;
                 }
@@ -49,6 +49,10 @@ value != null || (value.Length > 2 && value.Length <= 30)
             }
             set
             {
+                if (value != null)
+                {
+                    this._ubicacion = value;
+                }
 
             }
 

@@ -41,7 +41,7 @@ namespace ejemplo_2.Campeonato
         public  DateTime FechaFin {
             get { return this._fechaFin; }
             set
-        {
+                {
                 DateTime fin = new DateTime(2019,4,8);
                 if (value <= fin)
                 {
@@ -49,7 +49,16 @@ namespace ejemplo_2.Campeonato
                 }
             }
         }
-        public bool IsConcluida { get; set; }
+        public bool IsConcluida {
+            get
+            {
+                return this._isConcluida;
+            }
+            set
+                {
+                this._isConcluida = value;
+                 }
+                }
 
 
     }
