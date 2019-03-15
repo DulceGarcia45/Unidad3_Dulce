@@ -60,6 +60,12 @@
     <Compile Include="Campeonato\Vista\championShip.Designer.cs">
       <DependentUpon>championShip.cs</DependentUpon>
     </Compile>
+    <Compile Include="Campeonato\Vista\Inicio_Campeonato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campeonato\Vista\Inicio_Campeonato.Designer.cs">
+      <DependentUpon>Inicio_Campeonato.cs</DependentUpon>
+    </Compile>
     <Compile Include="Campeonato\Vista\Jornada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Campeonato\Vista\championShip.resx">
       <DependentUpon>championShip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campeonato\Vista\Inicio_Campeonato.resx">
+      <DependentUpon>Inicio_Campeonato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Campeonato\Vista\Jornada.resx">
       <DependentUpon>Jornada.cs</DependentUpon>
