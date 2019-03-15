@@ -26,8 +26,7 @@ namespace ejemplo_2.Campeonato
         // resultado de la asociacion
 
         private List<Cancha> _cancha = new List<Cancha>();
-        private List<Arbitro> _arbitro1 = new List<Arbitro>();
-        private List<Arbitro> _arbitro2 = new List<Arbitro>();
+        
 
         //constructores default
         public void addArbitro (Arbitro A)
