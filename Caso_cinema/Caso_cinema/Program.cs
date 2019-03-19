@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ejemplo_2;
-using ejemplo_2.Campeonato.Vista;
-using ejemplo_2.Actividades_3_4_5.Vista;
 
-namespace ejemplo_2
+namespace Caso_cinema
 {
     static class Program
     {
@@ -19,7 +16,7 @@ namespace ejemplo_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Inicio_Campeonato());
+            Application.Run(new Form1());
         }
     }
 }
