@@ -10,11 +10,31 @@ namespace ejemplo_2.Cinema.Modelo
     {
         private int _numero;
         private bool _estaDisponible;
+        private Sala _sala;
+        public Sala sala = new Sala();
 
-        public Diasponibilidad (bool disponibilidad)
+       
+
+        public  void Diasponibilidad (bool disponibilidad)
         {
             _estaDisponible = disponibilidad;
-            this.
+            
+        }
+        public int Numero
+        {
+            get { return _numero; }
+
+            set { _numero = value; }
+        }
+        public bool EstaDisponible
+        {
+            get { return _estaDisponible;}
+            set { _estaDisponible = value; }
+        }
+
+        public override string ToString()
+        {
+            return "Numero" + _numero + "|EstaDisponible"+_estaDisponible;
         }
     }
 }

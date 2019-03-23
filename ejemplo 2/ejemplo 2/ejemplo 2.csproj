@@ -97,7 +97,11 @@
       <DependentUpon>Jornada.cs</DependentUpon>
     </Compile>
     <Compile Include="Cinema\Modelo\Asiento.cs" />
+    <Compile Include="Cinema\Modelo\Boleto.cs" />
+    <Compile Include="Cinema\Modelo\Cartelera.cs" />
     <Compile Include="Cinema\Modelo\Cliente.cs" />
+    <Compile Include="Cinema\Modelo\Pelicula.cs" />
+    <Compile Include="Cinema\Modelo\Reservacion.cs" />
     <Compile Include="Cinema\Modelo\Taquillero.cs" />
     <Compile Include="Cinema\Modelo\MockObjetos.cs" />
     <Compile Include="Cinema\Modelo\Persona.cs" />
