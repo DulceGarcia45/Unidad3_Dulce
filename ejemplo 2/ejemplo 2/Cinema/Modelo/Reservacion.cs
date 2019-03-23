@@ -35,7 +35,7 @@ namespace ejemplo_2.Cinema.Modelo
         }
         public string NumTargeta
         {
-            get { return _numTargeta ; }
+            get { return _numTargeta; }
             set
             {
                 if (value != null || (value.Length > 2 && value.Length <= 30))
