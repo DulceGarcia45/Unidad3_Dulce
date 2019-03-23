@@ -96,8 +96,9 @@
     <Compile Include="Campeonato\Vista\Jornada.Designer.cs">
       <DependentUpon>Jornada.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cinema\Modelo\Asiento.cs" />
     <Compile Include="Cinema\Modelo\Cliente.cs" />
-    <Compile Include="Cinema\Modelo\Empleado.cs" />
+    <Compile Include="Cinema\Modelo\Taquillero.cs" />
     <Compile Include="Cinema\Modelo\MockObjetos.cs" />
     <Compile Include="Cinema\Modelo\Persona.cs" />
     <Compile Include="Cinema\Modelo\Sala.cs" />

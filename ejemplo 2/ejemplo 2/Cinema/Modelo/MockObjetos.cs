@@ -20,14 +20,14 @@ namespace ejemplo_2.Cinema.Modelo
 
             return colSalas;
         }
-        public List <Empleado> coleccionEmpleados ()
+        public List <Taquillero> coleccionEmpleados ()
         {
-            List<Empleado> coleccionEmpleados = new List<Empleado>();
+            List<Taquillero> coleccionEmpleados = new List<Taquillero>();
             Persona person1 = new Persona();
-            Empleado emp1 = new Empleado();
+            Taquillero emp1 = new Taquillero();
             for (int i = 1; i <= 100; i++)
             {
-                coleccionEmpleados.Add(new Empleado());
+                coleccionEmpleados.Add(new Taquillero());
             }
 
             return coleccionEmpleados;

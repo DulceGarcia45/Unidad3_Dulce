@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace ejemplo_2.Cinema.Modelo
 {
-    class Empleado:Persona
+    class Taquillero:Persona
     {
         private int _numeroEmpleado;
         private string _tipoEmpleado;
 
-        public Empleado() : base()
+        public Taquillero() : base()
         {
         }
 
-        public Empleado(int numero, string tipo)
+        public Taquillero(int numero, string tipo)
         {
             _numeroEmpleado = numero;
             _tipoEmpleado = tipo;
