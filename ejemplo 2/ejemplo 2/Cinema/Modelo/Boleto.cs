@@ -27,7 +27,8 @@ namespace ejemplo_2.Cinema.Modelo
         {
             return;
         }
-        public long Folio
+        public long Folio  
+
         {
             get { return _folio; }
             set{
