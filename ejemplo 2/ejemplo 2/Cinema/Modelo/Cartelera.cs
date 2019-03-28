@@ -70,6 +70,7 @@ namespace ejemplo_2.Cinema.Modelo
                 }
             }
         }
+
         public string Tipo
         {
             get { return _tipo; }
